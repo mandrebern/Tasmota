@@ -679,6 +679,7 @@
 //#define USE_MIEL_HVAC                            // Add support for Mitsubishi Electric HVAC serial interface (+5k code)
 //#define USE_AS608                                // Add support for AS608 optical and R503 capacitive fingerprint sensor (+3k code)
 //  #define USE_AS608_MESSAGES                     // Add verbose error messages (+0k4 code)
+#define USE_A01NYUB                                 // Add support for A01NYUB Ultrasound sensor
 
 // -- Power monitoring sensors --------------------
 #define USE_ENERGY_MARGIN_DETECTION              // Add support for Energy Margin detection (+1k6 code)

@@ -150,7 +150,9 @@ enum UserSelectablePins {
   GPIO_NEOPOOL_TX, GPIO_NEOPOOL_RX,    // Sugar Valley RS485 interface
   GPIO_SDM72_TX, GPIO_SDM72_RX,        // SDM72 Serial interface
   GPIO_TM1637CLK, GPIO_TM1637DIO,      // TM1637 interface
-  GPIO_SENSOR_END };
+  GPIO_A01NYUB_RX,                     // A01NYUB Serial interface
+  GPIO_SENSOR_END
+};
 
 enum ProgramSelectablePins {
   GPIO_FIX_START = 2046,
@@ -320,6 +322,7 @@ const char kSensorNames[] PROGMEM =
   D_SENSOR_NEOPOOL_TX "|" D_SENSOR_NEOPOOL_RX "|"
   D_SENSOR_SDM72_TX "|" D_SENSOR_SDM72_RX "|"
   D_SENSOR_TM1637_CLK "|" D_SENSOR_TM1637_DIO "|"
+  D_SENSOR_A01NYUB_RX "|"
   ;
 
 const char kSensorNamesFixed[] PROGMEM =
@@ -656,6 +659,9 @@ const uint16_t kGpioNiceList[] PROGMEM = {
 #ifdef USE_PMS5003
   AGPIO(GPIO_PMS5003_TX),     // Plantower PMS5003 Serial interface
   AGPIO(GPIO_PMS5003_RX),     // Plantower PMS5003 Serial interface
+#endif
+#ifdef USE_A01NYUB
+  AGPIO(GPIO_A01NYUB_RX),     // A01NYUB Serial RX
 #endif
 #if defined(USE_TX20_WIND_SENSOR) || defined(USE_TX23_WIND_SENSOR)
   AGPIO(GPIO_TX2X_TXD_BLACK), // TX20/TX23 Transmission Pin

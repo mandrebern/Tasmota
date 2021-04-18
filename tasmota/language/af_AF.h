@@ -791,6 +791,7 @@
 #define D_SENSOR_WIEGAND_D1    "Wiegand D1"
 #define D_SENSOR_NEOPOOL_TX    "NeoPool Tx"
 #define D_SENSOR_NEOPOOL_RX    "NeoPool Rx"
+#define D_SENSOR_A01NYUB_RX    "A01NYUB Sensor RX"
 
 
 // Units
